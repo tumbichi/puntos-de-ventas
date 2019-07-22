@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/view_details_text_view_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chinasd"/>
+
+    <TextView
+        android:id="@+id/view_details_text_view_direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Av. San Martin 954"/>
+    <TextView
+        android:id="@+id/view_details_text_view_ciudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C.A.B.A"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitud"/>
+    <TextView
+        android:id="@+id/view_details_text_view_latitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-34.5882903"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logintud"/>
+    <TextView
+        android:id="@+id/view_details_text_view_longitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-58.3709923"/>
+
+
+</LinearLayout>
