@@ -1,45 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
-
-    <TextView
-        android:id="@+id/view_details_text_view_nombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Chinasd"/>
-
-    <TextView
-        android:id="@+id/view_details_text_view_direccion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Av. San Martin 954"/>
-    <TextView
-        android:id="@+id/view_details_text_view_ciudad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="C.A.B.A"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Latitud"/>
-    <TextView
-        android:id="@+id/view_details_text_view_latitud"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="-34.5882903"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Logintud"/>
-    <TextView
-        android:id="@+id/view_details_text_view_longitud"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="-58.3709923"/>
+    android:gravity="center"
+    android:background="@drawable/city_background">
 
 
-</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7F000000">
+
+    </RelativeLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:orientation="vertical">
+    
+            <TextView
+                android:id="@+id/view_details_text_view_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chinasd"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif-black"/>
+        
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/view_details_text_view_direccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Av. San Martin 954"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"/>
+            <TextView
+                android:id="@+id/view_details_text_view_ciudad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="2dp"
+                android:text="C.A.B.A"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"/>
+        
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="2dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Latitud"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-medium"/>
+                <TextView
+                    android:id="@+id/view_details_text_view_latitud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="-34.5882903"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-light"/>
+        
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="2dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logintud"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-medium"/>
+                <TextView
+                    android:id="@+id/view_details_text_view_longitud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-58.3709923"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-light"/>
+            </LinearLayout>
+       </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</RelativeLayout>

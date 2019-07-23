@@ -1,4 +1,4 @@
-package com.pity.punto_de_venta_test.db;
+package com.pity.punto_de_venta_test.db.network;
 
 public class Response {
 
